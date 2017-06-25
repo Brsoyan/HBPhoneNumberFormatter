@@ -45,6 +45,8 @@ formatter.shakeRepeatCount = 4;
 PhoneNumberTextField automatically formats phone numbers and gives the user full editing capabilities.
 ![alt text](https://github.com/Brsoyan/HBPhoneNumberFormatter/blob/master/app.gif)
 
+You can check your textField validation ```- (BOOL)numberIsValidPhoneText:(NSString *)phoneText;```
+
 ## Installation
 
 HBPhoneNumberFormatter is available through [CocoaPods](http://cocoapods.org). To install
