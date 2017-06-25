@@ -31,4 +31,18 @@
     return YES;
 }
 
+//isValidation
+- (IBAction)isValidationisValidationAction {
+    BOOL isValid = [self.formatter numberIsValidPhoneText:self.myTextField.text];
+    
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:isValid ? @"textField is valid" : @"textField is not valid"
+                                message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+
 @end

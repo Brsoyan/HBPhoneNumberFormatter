@@ -29,7 +29,7 @@ Override this method
 }
 ```
 - If you need change or disable animation.
-HBPhoneNumberFormatter object have thisproperties you can change it 
+HBPhoneNumberFormatter object have this properties you can change it 
 ``` 
 	isShake, (default == YES)
 	shakeSize, (default == 5)

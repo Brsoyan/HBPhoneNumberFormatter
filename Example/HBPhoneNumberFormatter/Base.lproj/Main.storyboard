@@ -27,6 +27,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-SI-Fqv">
+                                <rect key="frame" x="139" y="215" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06298828125" green="0.41078016493055558" blue="0.33531358506944442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="isValidation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="isValidationisValidationAction" destination="whP-gf-Uak" eventType="touchUpInside" id="bzE-fl-ZHX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83208550347222221" green="0.85177951388888884" blue="0.85584852430555558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
