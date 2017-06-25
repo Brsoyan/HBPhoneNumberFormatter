@@ -9,7 +9,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-##Usage
+## Usage
 
 - #import <HBPhoneNumberFormatter/HBPhoneNumberFormatter.h>
 
@@ -43,7 +43,7 @@ formatter.shakeSize = 10;
 formatter.shakeRepeatCount = 4; 
 ```
 PhoneNumberTextField automatically formats phone numbers and gives the user full editing capabilities.
-![alt text](https://github.com/Brsoyan/HBPhoneNumberFormatter/master/img.png)
+![alt text](https://github.com/Brsoyan/HBPhoneNumberFormatter/blob/master/app.gif)
 
 ## Installation
 
