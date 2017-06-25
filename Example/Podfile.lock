@@ -1,0 +1,16 @@
+PODS:
+  - HBPhoneNumberFormatter (0.1.0)
+
+DEPENDENCIES:
+  - HBPhoneNumberFormatter (from `../`)
+
+EXTERNAL SOURCES:
+  HBPhoneNumberFormatter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HBPhoneNumberFormatter: fcc92dc7eb8b9c82f8fdf5d3598faefc8d773d50
+
+PODFILE CHECKSUM: 301c3e289a772e3291221af85c0929a117652ebe
+
+COCOAPODS: 1.2.1

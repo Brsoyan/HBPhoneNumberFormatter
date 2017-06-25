@@ -1,0 +1,6 @@
+framework module HBPhoneNumberFormatter {
+  umbrella header "HBPhoneNumberFormatter-umbrella.h"
+
+  export *
+  module * { export * }
+}
