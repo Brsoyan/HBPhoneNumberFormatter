@@ -8,22 +8,17 @@
 
 #import "HBViewController.h"
 
-@interface HBViewController ()
+@interface HBViewController () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *myTextFielf;
 
 @end
 
 @implementation HBViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.myTextFielf.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
