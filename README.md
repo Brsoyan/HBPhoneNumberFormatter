@@ -18,7 +18,8 @@ You can set your custom formatting like @"(123) 1234:123" or @"123-123-12:12"
 
 - In your ViewController conform to protocol <UITextFieldDelegate>. 
 Override this method
-```- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+```
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     //check textField
     if ([textField isEqual:self.phoneField]) {
     	HBPhoneNumberFormatter *formatter = [[HBPhoneNumberFormatter alloc] initWithFormatting:@"(111) 1111-111"];
