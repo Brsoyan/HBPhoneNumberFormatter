@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HBPhoneNumberFormatter_Example' do
+  pod 'HBPhoneNumberFormatter', :path => '../'
+
+  target 'HBPhoneNumberFormatter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
