@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C3292E19A3CAF1A93DD65F812B97CA /* HBPhoneNumberFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86916253AEE4A7F1180BF9B3CE704FC9 /* HBPhoneNumberFormatter-dummy.m */; };
 		0932D6D5AD336A6BB93F7EE14237B284 /* Pods-HBPhoneNumberFormatter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F23CD163C2533D7B71E1976D5A0FFA4A /* Pods-HBPhoneNumberFormatter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13ABA48070E8F1A3C8E0B451A2CF8A12 /* HBPhoneNumberFormatter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1500630AAEE9C2AA0BADEA86A477E533 /* HBPhoneNumberFormatter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14EF8B3C3BA19933F3DA1AD018FC50E8 /* Pods-HBPhoneNumberFormatter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E5630E0C28B8761A2761CBC0C1F001 /* Pods-HBPhoneNumberFormatter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45FE381F0339CC8407174FC3B283284F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		59FC55059BED2C8FF6EF5EAADA3FC20F /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD63A19B8A719008714873EEFE258B74 /* ReplaceMe.m */; };
+		324FB1690268F3E5948369EA0BC2A82D /* HBPhoneNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C4B8DA79AF36098B9A75C577A920FA /* HBPhoneNumberFormatter.m */; };
+		36C0DD6BD991910BDCB0FD9D62BC84A2 /* HBPhoneNumberFormatter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1500630AAEE9C2AA0BADEA86A477E533 /* HBPhoneNumberFormatter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FD4D3BFB570EA97024D0480F0C8DC3 /* HBPhoneNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78E6E7FA45131E0712B9F7C299C83738 /* Pods-HBPhoneNumberFormatter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E01016E88158A65705D54F52EEB53E9 /* Pods-HBPhoneNumberFormatter_Tests-dummy.m */; };
 		7A0A60E096203738E3C4FDDAE30C69EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		CB34CC44284D36F91D94DEE705FFBD8D /* Pods-HBPhoneNumberFormatter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B57520C10C58D7B289C2E44C73F871 /* Pods-HBPhoneNumberFormatter_Example-dummy.m */; };
 		D1D06979E0EAAC4A2425B081A6D1A914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D84ABC3779C4892A2BC185E10EAFA1EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EAC80A6BB57A385AB802FB268654BCA1 /* HBPhoneNumberFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86916253AEE4A7F1180BF9B3CE704FC9 /* HBPhoneNumberFormatter-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FB708652854EA792EAA3D02A4A95212E;
+			remoteGlobalIDString = 4F407A99CF1CAE8C4A77D057B4D62A24;
 			remoteInfo = HBPhoneNumberFormatter;
 		};
 /* End PBXContainerItemProxy section */
@@ -52,19 +53,28 @@
 		8F782176E9E2615E22A166DAE8CE9927 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9686936A547B5572627677BB72ADF1AE /* Pods-HBPhoneNumberFormatter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HBPhoneNumberFormatter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HBPhoneNumberFormatter.h; sourceTree = "<group>"; };
 		A856E71A8E98415DC8572B5AF4A89854 /* Pods-HBPhoneNumberFormatter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HBPhoneNumberFormatter_Tests.modulemap"; sourceTree = "<group>"; };
-		AD63A19B8A719008714873EEFE258B74 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		C45B9104176D6B06E512FA9908A7F578 /* Pods-HBPhoneNumberFormatter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HBPhoneNumberFormatter_Example-resources.sh"; sourceTree = "<group>"; };
 		D26F760ACD7CB50A2679F9244EE1FC8A /* Pods-HBPhoneNumberFormatter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HBPhoneNumberFormatter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D541DD9A3470532D86E31D95FA94E1BC /* Pods-HBPhoneNumberFormatter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HBPhoneNumberFormatter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		DB8620B794EFAE72CB394280110392B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD484FFE7A987503B28D0F0559AC3895 /* HBPhoneNumberFormatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HBPhoneNumberFormatter.framework; path = HBPhoneNumberFormatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C4B8DA79AF36098B9A75C577A920FA /* HBPhoneNumberFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HBPhoneNumberFormatter.m; sourceTree = "<group>"; };
 		F23CD163C2533D7B71E1976D5A0FFA4A /* Pods-HBPhoneNumberFormatter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HBPhoneNumberFormatter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F465FD0C230709128A40C866DC53DAB5 /* Pods-HBPhoneNumberFormatter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HBPhoneNumberFormatter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F877FD461829BAA3C0EA0C3B85717084 /* HBPhoneNumberFormatter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HBPhoneNumberFormatter.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		777DCB36CDA7A3C186A516094CFCA84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84ABC3779C4892A2BC185E10EAFA1EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94C2B4F017D64DB440C74C05478DCEC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,26 +91,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7392661C64FABA6CFC586D41A2F74B5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45FE381F0339CC8407174FC3B283284F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		163B58E7DC9CBE73D255FED946853F6F /* HBPhoneNumberFormatter */ = {
-			isa = PBXGroup;
-			children = (
-				D564B62EABE405C29AD0466DD08E21AE /* Classes */,
-			);
-			name = HBPhoneNumberFormatter;
-			path = HBPhoneNumberFormatter;
-			sourceTree = "<group>";
-		};
 		1BF00A310A0D6B7E9957712B99323770 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +101,16 @@
 				EF1D9E15CF0E4C41C9A340771821F68F /* Pods-HBPhoneNumberFormatter_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		289360EDEA5FCB32E24A0A3E7BCAAC80 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */,
+				E2C4B8DA79AF36098B9A75C577A920FA /* HBPhoneNumberFormatter.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		515CF356A2257AF45D6CF832F7F072E3 /* Pods-HBPhoneNumberFormatter_Example */ = {
@@ -179,19 +182,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D564B62EABE405C29AD0466DD08E21AE /* Classes */ = {
+		E9FCDDF2AA4941B58CA2D5C94CAEAB6F /* HBPhoneNumberFormatter */ = {
 			isa = PBXGroup;
 			children = (
-				AD63A19B8A719008714873EEFE258B74 /* ReplaceMe.m */,
+				289360EDEA5FCB32E24A0A3E7BCAAC80 /* Classes */,
 			);
-			name = Classes;
-			path = Classes;
+			name = HBPhoneNumberFormatter;
+			path = HBPhoneNumberFormatter;
 			sourceTree = "<group>";
 		};
 		EE464BD28FF25E31864B0603C8027BCB /* HBPhoneNumberFormatter */ = {
 			isa = PBXGroup;
 			children = (
-				163B58E7DC9CBE73D255FED946853F6F /* HBPhoneNumberFormatter */,
+				E9FCDDF2AA4941B58CA2D5C94CAEAB6F /* HBPhoneNumberFormatter */,
 				6C56F8370CB2B9817C68CF5949FAD7D8 /* Support Files */,
 			);
 			name = HBPhoneNumberFormatter;
@@ -235,19 +238,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B3A0EFBF552ACF37A9DD070DB4C9F4C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13ABA48070E8F1A3C8E0B451A2CF8A12 /* HBPhoneNumberFormatter-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A12D356940D5BD9D1A28CFC0FA8CEC0A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				14EF8B3C3BA19933F3DA1AD018FC50E8 /* Pods-HBPhoneNumberFormatter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0B9509AAEF693E65EB27D716D9F9CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C0DD6BD991910BDCB0FD9D62BC84A2 /* HBPhoneNumberFormatter-umbrella.h in Headers */,
+				42FD4D3BFB570EA97024D0480F0C8DC3 /* HBPhoneNumberFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +276,23 @@
 			productReference = 7272A354AE45F8562A4E2D9F3B192877 /* Pods_HBPhoneNumberFormatter_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4F407A99CF1CAE8C4A77D057B4D62A24 /* HBPhoneNumberFormatter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A043AF34C977837336D5EB54DDE7F166 /* Build configuration list for PBXNativeTarget "HBPhoneNumberFormatter" */;
+			buildPhases = (
+				FAF71950201F91B04D79D861BCD28DB3 /* Sources */,
+				777DCB36CDA7A3C186A516094CFCA84B /* Frameworks */,
+				FF0B9509AAEF693E65EB27D716D9F9CD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HBPhoneNumberFormatter;
+			productName = HBPhoneNumberFormatter;
+			productReference = DD484FFE7A987503B28D0F0559AC3895 /* HBPhoneNumberFormatter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6F5C2604C9AC28AE5C978838DCB4D845 /* Pods-HBPhoneNumberFormatter_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B49937193DDC7588DAF1F936C03EE203 /* Build configuration list for PBXNativeTarget "Pods-HBPhoneNumberFormatter_Tests" */;
@@ -287,23 +308,6 @@
 			name = "Pods-HBPhoneNumberFormatter_Tests";
 			productName = "Pods-HBPhoneNumberFormatter_Tests";
 			productReference = 6788FFB9E54F4B20D2B33756DDEF959D /* Pods_HBPhoneNumberFormatter_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FB708652854EA792EAA3D02A4A95212E /* HBPhoneNumberFormatter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E54B1CC29F2415CB1DBDBA5CC134B3CB /* Build configuration list for PBXNativeTarget "HBPhoneNumberFormatter" */;
-			buildPhases = (
-				00E05CBFCC648185F7BC18E67E31143C /* Sources */,
-				F7392661C64FABA6CFC586D41A2F74B5 /* Frameworks */,
-				7B3A0EFBF552ACF37A9DD070DB4C9F4C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HBPhoneNumberFormatter;
-			productName = HBPhoneNumberFormatter;
-			productReference = DD484FFE7A987503B28D0F0559AC3895 /* HBPhoneNumberFormatter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB708652854EA792EAA3D02A4A95212E /* HBPhoneNumberFormatter */,
+				4F407A99CF1CAE8C4A77D057B4D62A24 /* HBPhoneNumberFormatter */,
 				42334CF8F8782A8FE5D09ED33732760E /* Pods-HBPhoneNumberFormatter_Example */,
 				6F5C2604C9AC28AE5C978838DCB4D845 /* Pods-HBPhoneNumberFormatter_Tests */,
 			);
@@ -335,15 +339,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E05CBFCC648185F7BC18E67E31143C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00C3292E19A3CAF1A93DD65F812B97CA /* HBPhoneNumberFormatter-dummy.m in Sources */,
-				59FC55059BED2C8FF6EF5EAADA3FC20F /* ReplaceMe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		55D0B446C6C27BF25C06BDADB11DFB18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,21 +355,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAF71950201F91B04D79D861BCD28DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC80A6BB57A385AB802FB268654BCA1 /* HBPhoneNumberFormatter-dummy.m in Sources */,
+				324FB1690268F3E5948369EA0BC2A82D /* HBPhoneNumberFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		28433FE713F5372954E43129904B2A7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HBPhoneNumberFormatter;
-			target = FB708652854EA792EAA3D02A4A95212E /* HBPhoneNumberFormatter */;
+			target = 4F407A99CF1CAE8C4A77D057B4D62A24 /* HBPhoneNumberFormatter */;
 			targetProxy = 04F9BFBD92467AD69419238306B1AA94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		28AE52B54068AA958C60DA74049276D6 /* Release */ = {
+		0C6AD3E23F84D9850C7E5DEA5264B42B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F465FD0C230709128A40C866DC53DAB5 /* Pods-HBPhoneNumberFormatter_Tests.release.xcconfig */;
+			baseConfigurationReference = 66901A279A3D3D10BB212DE3CE0F6795 /* Pods-HBPhoneNumberFormatter_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -388,18 +392,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Tests/Pods-HBPhoneNumberFormatter_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Pods-HBPhoneNumberFormatter_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HBPhoneNumberFormatter_Tests;
+				PRODUCT_NAME = Pods_HBPhoneNumberFormatter_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,7 +412,39 @@
 			};
 			name = Release;
 		};
-		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+		45FD62F136479CFAFA4C6F69C180CED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F877FD461829BAA3C0EA0C3B85717084 /* HBPhoneNumberFormatter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HBPhoneNumberFormatter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HBPhoneNumberFormatter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -448,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -456,16 +492,16 @@
 			};
 			name = Debug;
 		};
-		396CEA8D9776294A78BC55E0CC597CB3 /* Debug */ = {
+		856BF80878C5A21C5A1A1AABE4B5BF2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EF77A3C086C97E0287DE89471703AD6 /* Pods-HBPhoneNumberFormatter_Tests.debug.xcconfig */;
+			baseConfigurationReference = F465FD0C230709128A40C866DC53DAB5 /* Pods-HBPhoneNumberFormatter_Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -474,11 +510,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Tests/Pods-HBPhoneNumberFormatter_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -490,11 +526,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		6F3E2FFB8540265F0F999D225575AD36 /* Debug */ = {
+		93C8C4E48E655DD07D0AE608DBEC8BCD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9686936A547B5572627677BB72ADF1AE /* Pods-HBPhoneNumberFormatter_Example.debug.xcconfig */;
+			baseConfigurationReference = F877FD461829BAA3C0EA0C3B85717084 /* HBPhoneNumberFormatter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -508,18 +544,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HBPhoneNumberFormatter/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Pods-HBPhoneNumberFormatter_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HBPhoneNumberFormatter_Example;
+				PRODUCT_NAME = HBPhoneNumberFormatter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,7 +560,7 @@
 			};
 			name = Debug;
 		};
-		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -564,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -572,45 +604,9 @@
 			};
 			name = Release;
 		};
-		9807F0D9C9346118EB7CD028ECD5C657 /* Release */ = {
+		DBA213B9DB682A1ACA7C9D430F9370B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66901A279A3D3D10BB212DE3CE0F6795 /* Pods-HBPhoneNumberFormatter_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Pods-HBPhoneNumberFormatter_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HBPhoneNumberFormatter_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CCB9C68FA30D9A9BD0AD6B2265F8B802 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F877FD461829BAA3C0EA0C3B85717084 /* HBPhoneNumberFormatter.xcconfig */;
+			baseConfigurationReference = 9686936A547B5572627677BB72ADF1AE /* Pods-HBPhoneNumberFormatter_Example.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -624,14 +620,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HBPhoneNumberFormatter/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Example/Pods-HBPhoneNumberFormatter_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HBPhoneNumberFormatter;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HBPhoneNumberFormatter_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,37 +640,41 @@
 			};
 			name = Debug;
 		};
-		D5A654292D84A099858F2E608E88A487 /* Release */ = {
+		E35A2A6F419AEA69B3A960A1BD5FFE18 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F877FD461829BAA3C0EA0C3B85717084 /* HBPhoneNumberFormatter.xcconfig */;
+			baseConfigurationReference = 2EF77A3C086C97E0287DE89471703AD6 /* Pods-HBPhoneNumberFormatter_Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HBPhoneNumberFormatter/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HBPhoneNumberFormatter/HBPhoneNumberFormatter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HBPhoneNumberFormatter;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HBPhoneNumberFormatter_Tests/Pods-HBPhoneNumberFormatter_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HBPhoneNumberFormatter_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -678,8 +682,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
-				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A043AF34C977837336D5EB54DDE7F166 /* Build configuration list for PBXNativeTarget "HBPhoneNumberFormatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C8C4E48E655DD07D0AE608DBEC8BCD /* Debug */,
+				45FD62F136479CFAFA4C6F69C180CED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -687,8 +700,8 @@
 		A7B541075D287A00E0B15E8A823443EA /* Build configuration list for PBXNativeTarget "Pods-HBPhoneNumberFormatter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F3E2FFB8540265F0F999D225575AD36 /* Debug */,
-				9807F0D9C9346118EB7CD028ECD5C657 /* Release */,
+				DBA213B9DB682A1ACA7C9D430F9370B4 /* Debug */,
+				0C6AD3E23F84D9850C7E5DEA5264B42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -696,17 +709,8 @@
 		B49937193DDC7588DAF1F936C03EE203 /* Build configuration list for PBXNativeTarget "Pods-HBPhoneNumberFormatter_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				396CEA8D9776294A78BC55E0CC597CB3 /* Debug */,
-				28AE52B54068AA958C60DA74049276D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E54B1CC29F2415CB1DBDBA5CC134B3CB /* Build configuration list for PBXNativeTarget "HBPhoneNumberFormatter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCB9C68FA30D9A9BD0AD6B2265F8B802 /* Debug */,
-				D5A654292D84A099858F2E608E88A487 /* Release */,
+				E35A2A6F419AEA69B3A960A1BD5FFE18 /* Debug */,
+				856BF80878C5A21C5A1A1AABE4B5BF2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
