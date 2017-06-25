@@ -24,6 +24,7 @@
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    //check textField
     if ([textField isEqual:self.myTextField]) {
         return [self.formatter textField:self.myTextField shouldChangeCharactersInRange:range replacementString:string];
     }

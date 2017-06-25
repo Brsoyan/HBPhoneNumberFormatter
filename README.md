@@ -9,7 +9,41 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+##Usage
+
+- #import <HBPhoneNumberFormatter/HBPhoneNumberFormatter.h>
+
+You can set your custom formatting like @"(123) 1234:123" or @"123-123-12:12"
+``` [[HBPhoneNumberFormatter alloc] initWithFormatting:@"(111) 1111-111"] ```
+
+- In your ViewController conform to protocol <UITextFieldDelegate>. 
+Override this method
+```- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    //check textField
+    if ([textField isEqual:self.phoneField]) {
+    	HBPhoneNumberFormatter *formatter = [[HBPhoneNumberFormatter alloc] initWithFormatting:@"(111) 1111-111"];
+        return [formatter textField:textField shouldChangeCharactersInRange:range replacementString:string];
+    }
+    return YES;
+}
+```
+- If you need change or disable animation.
+HBPhoneNumberFormatter object have thisproperties you can change it 
+``` 
+	isShake, (default == YES)
+	shakeSize, (default == 5)
+	shakeDuration, (default == 0.1)
+	shakeRepeatCount, (default == 2)
+```
+
+Example` 
+``` 
+HBPhoneNumberFormatter *formatter = [[HBPhoneNumberFormatter alloc] initWithFormatting:@"(111) 1111-111"];
+formatter.shakeSize = 10;
+formatter.shakeRepeatCount = 4; 
+```
+PhoneNumberTextField automatically formats phone numbers and gives the user full editing capabilities.
+![alt text](https://github.com/Brsoyan/HBPhoneNumberFormatter/master/img.png)
 
 ## Installation
 
@@ -17,9 +51,8 @@ HBPhoneNumberFormatter is available through [CocoaPods](http://cocoapods.org). T
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "HBPhoneNumberFormatter"
+pod "HBPhoneNumberFormatter”, ‘~> 1.0’
 ```
-
 ## Author
 
 HaykBrsoyan, haykbrsoyan@gmail.com
