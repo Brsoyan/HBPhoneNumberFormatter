@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "HBPhoneNumberFormatter.h"
 
 FOUNDATION_EXPORT double HBPhoneNumberFormatterVersionNumber;
 FOUNDATION_EXPORT const unsigned char HBPhoneNumberFormatterVersionString[];

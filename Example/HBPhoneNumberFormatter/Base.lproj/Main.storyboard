@@ -26,13 +26,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.83208550347222221" green="0.85177951388888884" blue="0.85584852430555558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="myTextFielf" destination="iuB-1C-gXt" id="Id3-KE-SWR"/>
+                        <outlet property="myTextField" destination="iuB-1C-gXt" id="07H-Va-oDl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

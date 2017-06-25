@@ -1,5 +1,5 @@
 PODS:
-  - HBPhoneNumberFormatter (0.1.0)
+  - HBPhoneNumberFormatter (1.0)
 
 DEPENDENCIES:
   - HBPhoneNumberFormatter (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HBPhoneNumberFormatter: fcc92dc7eb8b9c82f8fdf5d3598faefc8d773d50
+  HBPhoneNumberFormatter: 096f46c60a0bc722caac96ab4ef028992e121b39
 
-PODFILE CHECKSUM: 301c3e289a772e3291221af85c0929a117652ebe
+PODFILE CHECKSUM: 3843a0a64e73697507c8503774557a686bfac4c0
 
 COCOAPODS: 1.2.1

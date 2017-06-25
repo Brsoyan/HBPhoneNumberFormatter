@@ -76,7 +76,7 @@
     // When added symbol in textField
     if (textField.text.length == range.location) {
         if (self.numberCount + self.symbols.count > textField.text.length) {
-            if (!self.isDelete) {
+            if (!self.isDelete && textField.text.length > 0) {
                 textField.text = [NSString stringWithFormat:@"%@%@",textField.text,string];
             }
             NSString *symbol = [self containSymbolForIndex:textField.text.length];
