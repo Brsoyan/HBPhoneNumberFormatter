@@ -7,18 +7,24 @@
 //
 
 #import "HBPhoneNumberFormatter.h"
+#import "HBCountryCode.h"
 
 @interface HBPhoneNumberFormatter ()
-
 @property (nonatomic) NSDictionary *symbols;
 @property (nonatomic) int numberCount;
 @property (nonatomic) BOOL isDelete;
+@property (nonatomic) NSString *prefix;
 @end
 
 @implementation HBPhoneNumberFormatter
 
 - (instancetype)initWithFormatting:(NSString *)formatting {
     if(!(self = [super init])) {
+        return nil;
+    }
+    
+    if (!formatting) {
+        NSLog(@"HB Please set up formatting");
         return nil;
     }
     
@@ -46,26 +52,44 @@
     return self;
 }
 
+- (void)setCountryName:(NSString *)name textField:(UITextField *)textField {
+    NSString *code = [HBCountryCode countryCodeWithName:name];
+    if (!code) {
+        self.prefix = [HBCountryCode countryCodeWithName:@"United States"];
+        NSLog(@"We dosn't finde %@ .HB Default prefix is United States",name);
+    } else {
+        self.prefix = code;
+    }
+    textField.text = [NSString stringWithFormat:@"%@",code];
+}
+
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     // typing symbol is number
     if (![self isNumber:string]) {
         [self shakeTextField:textField];
         return NO;
     }
+    if (range.length > 0 && [self.prefix isEqualToString:textField.text]) {
+        [self shakeTextField:textField];
+        return NO;
+    }
+    if(range.length > 0) {
+        self.isDelete = YES;
+    } else {
+        self.isDelete = NO;
+    }
+    
     NSString *number = [self getNumber:textField.text];
     NSUInteger numberLength = number.length;
     if(numberLength == self.numberCount) {
-        NSString *symbol = [self containSymbolForIndex:textField.text.length];
+        NSString *symbol = [self symbolForIndex:textField.text.length];
         if (symbol) {
             textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
-            symbol = [self containSymbolForIndex:textField.text.length];
-            while (symbol) {
-                textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
-                symbol = [self containSymbolForIndex:textField.text.length];
-            }            
+            symbol = [self symbolForIndex:textField.text.length];
+            [self addSymbolInTextField:textField symbol:symbol];
         }
         
-        if (range.location == self.numberCount + self.symbols.count) {
+        if (range.location == self.numberCount + self.symbols.count + self.prefix.length) {
             [self shakeTextField:textField];
         }
         if(range.length == 0) {
@@ -73,51 +97,23 @@
         }
     }
     
-    // When added symbol in textField
-    if (textField.text.length == range.location) {
-        if (self.numberCount + self.symbols.count > textField.text.length) {
-            if (!self.isDelete && textField.text.length > 0) {
-                textField.text = [NSString stringWithFormat:@"%@%@",textField.text,string];
-            }
-            NSString *symbol = [self containSymbolForIndex:textField.text.length];
-            if (symbol) {
-                textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
-                symbol = [self containSymbolForIndex:textField.text.length];
-                while (symbol) {
-                    textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
-                    symbol = [self containSymbolForIndex:textField.text.length];
-                }
-            }
-
-            if (self.isDelete) {
-                textField.text = [NSString stringWithFormat:@"%@%@",textField.text,string];
-            }
-            self.isDelete = NO;
-            return NO;
-        }
-        self.isDelete = NO;
-        return NO;
-    }
-    
     // TextField is Empty
-    if (textField.text.length == 0) {
-        self.isDelete = NO;
+    if (textField.text.length == self.prefix.length) {
         if (self.numberCount + self.symbols.count > textField.text.length) {
-            NSString *symbol = [self containSymbolForIndex:0];
+            NSString *symbol = [self symbolForIndex:self.prefix.length];
             if (symbol) {
-                textField.text = [NSString stringWithFormat:@"%@", symbol];
-                symbol = [self containSymbolForIndex:textField.text.length];
-                while (symbol) {
-                    textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
-                    symbol = [self containSymbolForIndex:textField.text.length];
+                if (textField.text.length != 0) {
+                    textField.text = [NSString stringWithFormat:@"%@%@",textField.text ,symbol];
+                } else {
+                    textField.text = [NSString stringWithFormat:@"%@" ,symbol];
                 }
+                symbol = [self symbolForIndex:textField.text.length];
+                [self addSymbolInTextField:textField symbol:symbol];
                 
                 textField.text = [NSString stringWithFormat:@"%@%@", textField.text, string];
-                symbol = [self containSymbolForIndex:textField.text.length];
-                while (symbol) {
-                    textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
-                    symbol = [self containSymbolForIndex:textField.text.length];
-                }
+                symbol = [self symbolForIndex:textField.text.length];
+                
+                [self addSymbolInTextField:textField symbol:symbol];
                 
                 return NO;
             }
@@ -125,32 +121,71 @@
         return NO;
     }
     
+    // When added symbol in textField
+    if (textField.text.length == range.location) {
+        if (self.numberCount + self.symbols.count + self.prefix.length > textField.text.length) {
+            NSString *symbol = [self symbolForIndex:textField.text.length];
+            if (symbol) {
+                textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
+                symbol = [self symbolForIndex:textField.text.length];
+                [self addSymbolInTextField:textField symbol:symbol];
+            }
+            if (!self.isDelete && textField.text.length > 0) {
+                textField.text = [NSString stringWithFormat:@"%@%@",textField.text,string];
+            }
+            symbol = [self symbolForIndex:textField.text.length];
+            if (symbol) {
+                textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
+                symbol = [self symbolForIndex:textField.text.length];
+                [self addSymbolInTextField:textField symbol:symbol];
+            }
+
+            if (self.isDelete) {
+                textField.text = [NSString stringWithFormat:@"%@%@",textField.text,string];
+            }
+            return NO;
+        }
+        return NO;
+    }
+    
     // Delete text from textField
     if(range.length > 0) {
-        self.isDelete = YES;
-        if (textField.text.length == range.location) {
-            textField.text = [textField.text substringToIndex:textField.text.length - 1];
+        if (range.location >= self.prefix.length) {
+            if (textField.text.length == range.location) {
+                textField.text = [textField.text substringToIndex:textField.text.length - 1];
+            } else {
+                textField.text = [textField.text substringToIndex:range.location];
+            }
+            NSString *symbol = [self symbolForIndex:textField.text.length - 1];
+            if (symbol) {
+                do {
+                    textField.text = [textField.text substringToIndex:(textField.text.length - 1)];
+                    symbol = [self symbolForIndex:(textField.text.length - 1)];
+                } while(symbol);
+            }
         } else {
-            textField.text = [textField.text substringToIndex:range.location];
+            textField.text = [textField.text substringToIndex:self.prefix.length];
         }
-        NSString *symbol = [self containSymbolForIndex:textField.text.length - 1];
-        if (symbol) {
-            do {
-                textField.text = [textField.text substringToIndex:(textField.text.length - 1)];
-                symbol = [self containSymbolForIndex:(textField.text.length - 1)];
-            } while(symbol);
-        }
+
         return NO;
     }
     return YES;
 }
 
-- (NSString *)containSymbolForIndex:(NSUInteger)index {
-        for (NSString *key in self.symbols.allKeys) {
-            if ([key isEqualToString:[@(index) stringValue]]) {
-                return self.symbols[key];
-            }
+- (void)addSymbolInTextField:(UITextField *)textField symbol:(NSString *)symbol {
+    while (symbol) {
+        textField.text = [NSString stringWithFormat:@"%@%@", textField.text, symbol];
+        symbol = [self symbolForIndex:textField.text.length];
+    }
+}
+
+- (NSString *)symbolForIndex:(NSUInteger)index {
+    index = index - self.prefix.length;
+    for (NSString *key in self.symbols.allKeys) {
+        if ([key isEqualToString:[@(index) stringValue]]) {
+            return self.symbols[key];
         }
+    }
     return nil;
 }
 
@@ -158,13 +193,18 @@
     NSUInteger len = [mobileNumber length];
     unichar buffer[len + 1];
     [mobileNumber getCharacters:buffer range:NSMakeRange(0, len)];
-    for(int i = 0; i < len; i++) {
+    NSString *number;
+    for(NSInteger i = self.prefix.length; i < len; i++) {
         NSString *character = [NSString stringWithFormat:@"%C", buffer[i]];
-        if (![self isNumber:character]) {
-            mobileNumber = [mobileNumber stringByReplacingOccurrencesOfString:character withString:@""];
+        if ([self isNumber:character]) {
+            if (number.length != 0) {
+                number = [NSString stringWithFormat:@"%@%@",number,character];
+            } else {
+                number = [NSString stringWithFormat:@"%@",character];
+            }
         }
     }
-    return mobileNumber;
+    return number;
 }
 
 - (BOOL)isNumber:(NSString *)number {
@@ -173,7 +213,7 @@
 }
 
 - (BOOL)numberIsValidPhoneText:(NSString *)phoneText {
-    int length = (int)[[self getNumber:phoneText] length];
+    NSInteger length = [self getNumber:phoneText].length;
     NSString *text = [self getNumber:phoneText];
     if (length == self.numberCount && [self isNumber:text]) {
         return YES;

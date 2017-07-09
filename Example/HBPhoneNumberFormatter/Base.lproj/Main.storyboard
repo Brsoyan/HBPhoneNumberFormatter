@@ -20,18 +20,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuB-1C-gXt">
-                                <rect key="frame" x="62" y="327" width="250" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuB-1C-gXt">
+                                <rect key="frame" x="37" y="318.5" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Whc-Hh-4ff"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-SI-Fqv">
-                                <rect key="frame" x="139" y="215" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-SI-Fqv">
+                                <rect key="frame" x="137" y="188.5" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.06298828125" green="0.41078016493055558" blue="0.33531358506944442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="isValidation">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mY8-Qp-Mrc"/>
+                                </constraints>
+                                <state key="normal" title="isValid">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -40,6 +44,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83208550347222221" green="0.85177951388888884" blue="0.85584852430555558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iuB-1C-gXt" firstAttribute="top" secondItem="EIS-SI-Fqv" secondAttribute="bottom" constant="100" id="IRU-1K-cYg"/>
+                            <constraint firstItem="iuB-1C-gXt" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="PFK-nv-URl"/>
+                            <constraint firstItem="iuB-1C-gXt" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="R6e-i9-S51"/>
+                            <constraint firstItem="EIS-SI-Fqv" firstAttribute="centerX" secondItem="iuB-1C-gXt" secondAttribute="centerX" id="tJV-yo-yPX"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myTextField" destination="iuB-1C-gXt" id="07H-Va-oDl"/>

@@ -16,7 +16,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 You can set your custom formatting like @"(123) 1234:123" or @"123-123-12:12"
 ``` [[HBPhoneNumberFormatter alloc] initWithFormatting:@"(111) 1111-111"] ```
 
-- In your ViewController conform to protocol <UITextFieldDelegate>. 
+If you need prefix for textFiel use this method.
+``` - (void)setCountryName:(NSString *)name textField:(UITextField *)textField; ```
+All coutry name you can see in this class ``` HBCountryCode ```
+
+- In your ViewController conform to protocol UITextFieldDelegate. 
 Override this method
 ```
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
@@ -54,7 +58,7 @@ HBPhoneNumberFormatter is available through [CocoaPods](http://cocoapods.org). T
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "HBPhoneNumberFormatter”, ‘~> 1.0’
+pod "HBPhoneNumberFormatter”, ‘~> 1.2’
 ```
 ## Author
 

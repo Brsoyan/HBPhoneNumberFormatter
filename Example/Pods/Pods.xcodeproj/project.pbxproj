@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0932D6D5AD336A6BB93F7EE14237B284 /* Pods-HBPhoneNumberFormatter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F23CD163C2533D7B71E1976D5A0FFA4A /* Pods-HBPhoneNumberFormatter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14EF8B3C3BA19933F3DA1AD018FC50E8 /* Pods-HBPhoneNumberFormatter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E5630E0C28B8761A2761CBC0C1F001 /* Pods-HBPhoneNumberFormatter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D2335D1F019CD600D80D4F /* HBCountryCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D2335B1F019CD600D80D4F /* HBCountryCode.h */; };
+		27D2335E1F019CD600D80D4F /* HBCountryCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D2335C1F019CD600D80D4F /* HBCountryCode.m */; };
 		324FB1690268F3E5948369EA0BC2A82D /* HBPhoneNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C4B8DA79AF36098B9A75C577A920FA /* HBPhoneNumberFormatter.m */; };
 		36C0DD6BD991910BDCB0FD9D62BC84A2 /* HBPhoneNumberFormatter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1500630AAEE9C2AA0BADEA86A477E533 /* HBPhoneNumberFormatter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42FD4D3BFB570EA97024D0480F0C8DC3 /* HBPhoneNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,35 +33,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08E4E1CED8BE4DA51AE7D8A392036AAD /* HBPhoneNumberFormatter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HBPhoneNumberFormatter.modulemap; sourceTree = "<group>"; };
+		08E4E1CED8BE4DA51AE7D8A392036AAD /* HBPhoneNumberFormatter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HBPhoneNumberFormatter.modulemap; sourceTree = "<group>"; };
 		1500630AAEE9C2AA0BADEA86A477E533 /* HBPhoneNumberFormatter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HBPhoneNumberFormatter-umbrella.h"; sourceTree = "<group>"; };
 		218882D7BBAA673C2096BE0E30B0E599 /* Pods-HBPhoneNumberFormatter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HBPhoneNumberFormatter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		22E5630E0C28B8761A2761CBC0C1F001 /* Pods-HBPhoneNumberFormatter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HBPhoneNumberFormatter_Example-umbrella.h"; sourceTree = "<group>"; };
 		23A9C8B0B9A778B64F3F1BB54D155B81 /* Pods-HBPhoneNumberFormatter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HBPhoneNumberFormatter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		27D233591F019AC100D80D4F /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		27D2335B1F019CD600D80D4F /* HBCountryCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCountryCode.h; sourceTree = "<group>"; };
+		27D2335C1F019CD600D80D4F /* HBCountryCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCountryCode.m; sourceTree = "<group>"; };
 		2EF77A3C086C97E0287DE89471703AD6 /* Pods-HBPhoneNumberFormatter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HBPhoneNumberFormatter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		30E9AC6B91555F69368A4CDC91499D13 /* Pods-HBPhoneNumberFormatter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HBPhoneNumberFormatter_Example.modulemap"; sourceTree = "<group>"; };
+		30E9AC6B91555F69368A4CDC91499D13 /* Pods-HBPhoneNumberFormatter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HBPhoneNumberFormatter_Example.modulemap"; sourceTree = "<group>"; };
 		560F07EA814910ACCC243FC9607085FB /* Pods-HBPhoneNumberFormatter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HBPhoneNumberFormatter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		61783328C9E1260F083A2C98C7A2EDD2 /* Pods-HBPhoneNumberFormatter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HBPhoneNumberFormatter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66901A279A3D3D10BB212DE3CE0F6795 /* Pods-HBPhoneNumberFormatter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HBPhoneNumberFormatter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6788FFB9E54F4B20D2B33756DDEF959D /* Pods_HBPhoneNumberFormatter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HBPhoneNumberFormatter_Tests.framework; path = "Pods-HBPhoneNumberFormatter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6788FFB9E54F4B20D2B33756DDEF959D /* Pods_HBPhoneNumberFormatter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBPhoneNumberFormatter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FEC48DFF2AC01D26958B22F01C4BBC3 /* HBPhoneNumberFormatter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HBPhoneNumberFormatter-prefix.pch"; sourceTree = "<group>"; };
-		7272A354AE45F8562A4E2D9F3B192877 /* Pods_HBPhoneNumberFormatter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HBPhoneNumberFormatter_Example.framework; path = "Pods-HBPhoneNumberFormatter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7272A354AE45F8562A4E2D9F3B192877 /* Pods_HBPhoneNumberFormatter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBPhoneNumberFormatter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B57520C10C58D7B289C2E44C73F871 /* Pods-HBPhoneNumberFormatter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HBPhoneNumberFormatter_Example-dummy.m"; sourceTree = "<group>"; };
 		7E01016E88158A65705D54F52EEB53E9 /* Pods-HBPhoneNumberFormatter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HBPhoneNumberFormatter_Tests-dummy.m"; sourceTree = "<group>"; };
 		82F339A4612A5B324D39B52D17AE1A72 /* Pods-HBPhoneNumberFormatter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HBPhoneNumberFormatter_Tests-resources.sh"; sourceTree = "<group>"; };
 		86916253AEE4A7F1180BF9B3CE704FC9 /* HBPhoneNumberFormatter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HBPhoneNumberFormatter-dummy.m"; sourceTree = "<group>"; };
 		8961468F9DD94AE4AE2C89B99AD4AC5D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F782176E9E2615E22A166DAE8CE9927 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9686936A547B5572627677BB72ADF1AE /* Pods-HBPhoneNumberFormatter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HBPhoneNumberFormatter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HBPhoneNumberFormatter.h; sourceTree = "<group>"; };
-		A856E71A8E98415DC8572B5AF4A89854 /* Pods-HBPhoneNumberFormatter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HBPhoneNumberFormatter_Tests.modulemap"; sourceTree = "<group>"; };
+		A856E71A8E98415DC8572B5AF4A89854 /* Pods-HBPhoneNumberFormatter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HBPhoneNumberFormatter_Tests.modulemap"; sourceTree = "<group>"; };
 		C45B9104176D6B06E512FA9908A7F578 /* Pods-HBPhoneNumberFormatter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HBPhoneNumberFormatter_Example-resources.sh"; sourceTree = "<group>"; };
 		D26F760ACD7CB50A2679F9244EE1FC8A /* Pods-HBPhoneNumberFormatter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HBPhoneNumberFormatter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D541DD9A3470532D86E31D95FA94E1BC /* Pods-HBPhoneNumberFormatter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HBPhoneNumberFormatter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		DB8620B794EFAE72CB394280110392B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD484FFE7A987503B28D0F0559AC3895 /* HBPhoneNumberFormatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HBPhoneNumberFormatter.framework; path = HBPhoneNumberFormatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD484FFE7A987503B28D0F0559AC3895 /* HBPhoneNumberFormatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HBPhoneNumberFormatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C4B8DA79AF36098B9A75C577A920FA /* HBPhoneNumberFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HBPhoneNumberFormatter.m; sourceTree = "<group>"; };
 		F23CD163C2533D7B71E1976D5A0FFA4A /* Pods-HBPhoneNumberFormatter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HBPhoneNumberFormatter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F465FD0C230709128A40C866DC53DAB5 /* Pods-HBPhoneNumberFormatter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HBPhoneNumberFormatter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,13 +108,22 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		27D233581F019AC100D80D4F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				27D233591F019AC100D80D4F /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		289360EDEA5FCB32E24A0A3E7BCAAC80 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */,
 				E2C4B8DA79AF36098B9A75C577A920FA /* HBPhoneNumberFormatter.m */,
+				27D2335B1F019CD600D80D4F /* HBCountryCode.h */,
+				27D2335C1F019CD600D80D4F /* HBCountryCode.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -185,9 +199,9 @@
 		E9FCDDF2AA4941B58CA2D5C94CAEAB6F /* HBPhoneNumberFormatter */ = {
 			isa = PBXGroup;
 			children = (
+				27D233581F019AC100D80D4F /* Assets */,
 				289360EDEA5FCB32E24A0A3E7BCAAC80 /* Classes */,
 			);
-			name = HBPhoneNumberFormatter;
 			path = HBPhoneNumberFormatter;
 			sourceTree = "<group>";
 		};
@@ -252,6 +266,7 @@
 			files = (
 				36C0DD6BD991910BDCB0FD9D62BC84A2 /* HBPhoneNumberFormatter-umbrella.h in Headers */,
 				42FD4D3BFB570EA97024D0480F0C8DC3 /* HBPhoneNumberFormatter.h in Headers */,
+				27D2335D1F019CD600D80D4F /* HBCountryCode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +376,7 @@
 			files = (
 				EAC80A6BB57A385AB802FB268654BCA1 /* HBPhoneNumberFormatter-dummy.m in Sources */,
 				324FB1690268F3E5948369EA0BC2A82D /* HBPhoneNumberFormatter.m in Sources */,
+				27D2335E1F019CD600D80D4F /* HBCountryCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
