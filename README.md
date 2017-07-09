@@ -14,10 +14,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - #import <HBPhoneNumberFormatter/HBPhoneNumberFormatter.h>
 
 You can set your custom formatting like @"(123) 1234:123" or @"123-123-12:12"
-``` [[HBPhoneNumberFormatter alloc] initWithFormatting:@"(111) 1111-111"] ```
+```
+[[HBPhoneNumberFormatter alloc] initWithFormatting:@"(111) 1111-111"]
+```
 
-If you need prefix for textFiel use this method.
-``` - (void)setCountryName:(NSString *)name textField:(UITextField *)textField; ```
+If you need prefix for your textField use this HBPhoneNumberFormatter method.
+```
+- (void)setCountryName:(NSString *)name textField:(UITextField *)textField;
+```
 All coutry name you can see in this class ``` HBCountryCode ```
 
 - In your ViewController conform to protocol UITextFieldDelegate. 
@@ -32,8 +36,7 @@ Override this method
     return YES;
 }
 ```
-- If you need change or disable animation.
-HBPhoneNumberFormatter object have this properties you can change it 
+- If you need change or disable animation. HBPhoneNumberFormatter object have this properties you set your animation size and duration.
 ``` 
 	isShake, (default == YES)
 	shakeSize, (default == 5)
