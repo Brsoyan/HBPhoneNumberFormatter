@@ -61,7 +61,7 @@ HBPhoneNumberFormatter is available through [CocoaPods](http://cocoapods.org). T
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "HBPhoneNumberFormatter”, ‘~> 1.2’
+pod 'HBPhoneNumberFormatter', '~> 1.6'
 ```
 ## Author
 

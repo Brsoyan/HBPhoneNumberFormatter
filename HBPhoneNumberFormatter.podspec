@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HBPhoneNumberFormatter'
-  s.version          = '1.2.1'
+  s.version          = '1.6'
   s.summary          = 'Objective-C framework for working with phone numbers.'
 
 # This description is used to generate tags and improve search results.
