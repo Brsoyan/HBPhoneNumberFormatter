@@ -112,10 +112,11 @@
                 
                 textField.text = [NSString stringWithFormat:@"%@%@", textField.text, string];
                 symbol = [self symbolForIndex:textField.text.length];
-                
                 [self addSymbolInTextField:textField symbol:symbol];
-                
-                return NO;
+            } else {
+                textField.text = [NSString stringWithFormat:@"%@" ,string];
+                symbol = [self symbolForIndex:textField.text.length];
+                [self addSymbolInTextField:textField symbol:symbol];
             }
         }
         return NO;
@@ -139,7 +140,7 @@
                 symbol = [self symbolForIndex:textField.text.length];
                 [self addSymbolInTextField:textField symbol:symbol];
             }
-
+            
             if (self.isDelete) {
                 textField.text = [NSString stringWithFormat:@"%@%@",textField.text,string];
             }
@@ -166,7 +167,7 @@
         } else {
             textField.text = [textField.text substringToIndex:self.prefix.length];
         }
-
+        
         return NO;
     }
     return YES;
