@@ -16,6 +16,8 @@
 		42FD4D3BFB570EA97024D0480F0C8DC3 /* HBPhoneNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78E6E7FA45131E0712B9F7C299C83738 /* Pods-HBPhoneNumberFormatter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E01016E88158A65705D54F52EEB53E9 /* Pods-HBPhoneNumberFormatter_Tests-dummy.m */; };
 		7A0A60E096203738E3C4FDDAE30C69EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A44CFBD120CE3FE6004CEF4A /* HBPhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CFBD020CE3FE6004CEF4A /* HBPhoneNumberFormatter.swift */; };
+		A4A2C1AB20CAC345003559BE /* HBCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2C1AA20CAC345003559BE /* HBCountryCode.swift */; };
 		CB34CC44284D36F91D94DEE705FFBD8D /* Pods-HBPhoneNumberFormatter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B57520C10C58D7B289C2E44C73F871 /* Pods-HBPhoneNumberFormatter_Example-dummy.m */; };
 		D1D06979E0EAAC4A2425B081A6D1A914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D84ABC3779C4892A2BC185E10EAFA1EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -59,6 +61,8 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9686936A547B5572627677BB72ADF1AE /* Pods-HBPhoneNumberFormatter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HBPhoneNumberFormatter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9C464627D390776AC4C38838250ED83B /* HBPhoneNumberFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HBPhoneNumberFormatter.h; sourceTree = "<group>"; };
+		A44CFBD020CE3FE6004CEF4A /* HBPhoneNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBPhoneNumberFormatter.swift; sourceTree = "<group>"; };
+		A4A2C1AA20CAC345003559BE /* HBCountryCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCountryCode.swift; sourceTree = "<group>"; };
 		A856E71A8E98415DC8572B5AF4A89854 /* Pods-HBPhoneNumberFormatter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HBPhoneNumberFormatter_Tests.modulemap"; sourceTree = "<group>"; };
 		C45B9104176D6B06E512FA9908A7F578 /* Pods-HBPhoneNumberFormatter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HBPhoneNumberFormatter_Example-resources.sh"; sourceTree = "<group>"; };
 		D26F760ACD7CB50A2679F9244EE1FC8A /* Pods-HBPhoneNumberFormatter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HBPhoneNumberFormatter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -180,6 +184,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A4A2C1A920CAC315003559BE /* HBPhoneNumberFormatter-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A4A2C1AA20CAC345003559BE /* HBCountryCode.swift */,
+				A44CFBD020CE3FE6004CEF4A /* HBPhoneNumberFormatter.swift */,
+			);
+			path = "HBPhoneNumberFormatter-Swift";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +221,7 @@
 		EE464BD28FF25E31864B0603C8027BCB /* HBPhoneNumberFormatter */ = {
 			isa = PBXGroup;
 			children = (
+				A4A2C1A920CAC315003559BE /* HBPhoneNumberFormatter-Swift */,
 				E9FCDDF2AA4941B58CA2D5C94CAEAB6F /* HBPhoneNumberFormatter */,
 				6C56F8370CB2B9817C68CF5949FAD7D8 /* Support Files */,
 			);
@@ -333,6 +347,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					4F407A99CF1CAE8C4A77D057B4D62A24 = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -376,7 +395,9 @@
 			files = (
 				EAC80A6BB57A385AB802FB268654BCA1 /* HBPhoneNumberFormatter-dummy.m in Sources */,
 				324FB1690268F3E5948369EA0BC2A82D /* HBPhoneNumberFormatter.m in Sources */,
+				A44CFBD120CE3FE6004CEF4A /* HBPhoneNumberFormatter.swift in Sources */,
 				27D2335E1F019CD600D80D4F /* HBCountryCode.m in Sources */,
+				A4A2C1AB20CAC345003559BE /* HBCountryCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F877FD461829BAA3C0EA0C3B85717084 /* HBPhoneNumberFormatter.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -454,6 +476,7 @@
 				PRODUCT_NAME = HBPhoneNumberFormatter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -548,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F877FD461829BAA3C0EA0C3B85717084 /* HBPhoneNumberFormatter.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -570,6 +594,8 @@
 				PRODUCT_NAME = HBPhoneNumberFormatter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
