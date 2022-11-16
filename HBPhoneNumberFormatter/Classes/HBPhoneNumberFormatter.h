@@ -27,4 +27,6 @@
 // You can check your formatting is valid or not.
 - (BOOL)numberIsValidPhoneText:(NSString *)phoneText;
 
+- (NSString *)getNumber:(NSString *)mobileNumber;
+
 @end
